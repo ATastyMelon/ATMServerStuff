@@ -1,0 +1,39 @@
+name: ATMServerStuff
+version: '${project.version}'
+main: net.atm.ATMServerStuff
+api-version: 1.19
+authors: [ A_Tasty_Melon ]
+commands:
+  fly:
+    description: Toggles flight
+    usage: /fly
+    permission: fly
+    permission-message: You do not have permission to use that command
+
+  robinhood:
+    description: Makes someone rich
+    usage: /robinhood
+    permission: robinhood
+    permission-message: You do not have permission to use that command
+
+  restartwarning:
+    description: Warns the server about a restart
+    usage: /restartwarning
+    permission-message: You do not have permission to use that command
+    permission: restartwarning
+
+  devmenu:
+    description: Shows a menu for admins
+    usage: /devmenu
+    permission: devmenu
+    permission-message: You do not have permission to use that command
+
+  knocker:
+    description: Gives the Knockback stick
+    usage: /knocker
+
+  totems:
+    description: Gives a shit ton of totems
+    usage: /totems
+    permission-message: You do not have permission to use that command
+    permission: totems
