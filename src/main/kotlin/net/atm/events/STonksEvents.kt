@@ -4,15 +4,10 @@ import net.atm.ATMServerStuff
 import net.atm.items.STonks
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
-import org.bukkit.Material
-import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.Action
 import org.bukkit.event.player.PlayerInteractEvent
-import org.bukkit.inventory.Inventory
-import org.bukkit.inventory.ItemStack
-import java.util.Random
 
 class STonksEvents(plugin: ATMServerStuff?) : Listener {
 
@@ -27,7 +22,7 @@ class STonksEvents(plugin: ATMServerStuff?) : Listener {
                 if (e.item!!.itemMeta!!.lore == STonks.STonk!!.itemMeta!!.lore) {
                     val p = e.player
                     p.sendMessage(ChatColor.GOLD.toString() + "Bring to Melon for a " + ChatColor.GOLD.toString() + "reward!")
-                    p.sendMessage(ChatColor.GOLD.toString() + "Or brag to your friends")
+                    p.sendMessage(ChatColor.GOLD.toString() + "Or brag to your friends if he isn't online")
                 }
             }
         }
