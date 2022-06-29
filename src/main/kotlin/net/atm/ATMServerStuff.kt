@@ -17,6 +17,7 @@ class ATMServerStuff : JavaPlugin() {
     override fun onEnable() {
         // Plugin startup logic
         Bukkit.getLogger().info("ATMServerStuff Started")
+        saveDefaultConfig()
         getCommand("fly")!!.setExecutor(Fly())
         getCommand("robinhood")!!.setExecutor(RobinHood())
         getCommand("restartwarning")!!.setExecutor(RestartWarning())
