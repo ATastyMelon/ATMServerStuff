@@ -9,15 +9,15 @@ import net.atm.handlers.JoinLeaveHandler
 import net.atm.handlers.PickleHandler
 import net.atm.handlers.PlayerHandler
 import net.atm.items.ItemManager
-import net.atm.items.STonks
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 
 class ATMServerStuff : JavaPlugin() {
+
     override fun onEnable() {
         // Plugin startup logic
+
         Bukkit.getLogger().info("ATMServerStuff Started")
-        saveDefaultConfig()
         getCommand("fly")!!.setExecutor(Fly())
         getCommand("robinhood")!!.setExecutor(RobinHood())
         getCommand("restartwarning")!!.setExecutor(RestartWarning())
